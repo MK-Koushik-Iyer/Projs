@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="./Project.css">
+    <link rel="html doc" href="./Projects.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="project.js"></script>
+</head>
+<body>
+    <header class="rubber">
+        <h2 class="pencil">Welcome All!</h2>
+        <div class="container">
+            <div class="row">
+                <nav class="nav navbar nav-justified col-xs-6">
+                    <a href="../Home.html">Home</a>
+                    <a href="../About.html">About</a>
+                    <a href="../Services.html">Services</a>
+                    <a href="../Awards.html">Projects</a>
+                    <a href="../Projects.html" id="active">Feedback</a>
+                </nav>
+            </div>
+     </div>
+    </header>
+    <form name="Myform">
+        <fieldset>
+        <legend>Farewell Form:</legend>
+        <h3>Did you like My Website?</h3>
+        <label for="Feedback">Yes</label>
+        <input type="radio" name="Feedback" id="Feedback">
+        <label for="Feedback"> No</label>
+        <input type="radio" name="Feedback" id="geedback"><br>
+        <h3>On a Scale of Ten, what would you rate for my site?</h3>
+        <label for="Feedback"></label>
+        <input type="range" name="feedback" id="feedback" min="0" max="10"><br>
+        <h3>Kindly Provide Ur Valuable Suggestions?</h3>
+        <input type="text" name="text" id="ieedback" placeholder="Type whatever you feel"><br>
+        <h3>Choose the aspects which you liked about my site:</h3>
+        <label for="checkbox">Aesthetics</label>
+        <input type="checkbox" name="checkbox" id="heckbox"><br>
+        <label for="checkbox">Mechanism</label>
+        <input type="checkbox" name="checkbox" id="fheckbox"><br>
+        <label for="checkbox">Dynamics</label>
+        <input type="checkbox" name="checkbox" id="theckbox"><br>
+        <label for="checkbox">Content</label>
+        <input type="checkbox" name="checkbox" id="checkbox"><br>
+        <label for="checkbox">Others</label>
+        <input type="checkbox" name="checkbox" id="Checkbox" value="Yes" onchange="visible()"><br>
+        <input type="submit" onclick="output();return false"><br>
+        <br>
+       </fieldset>
+    </form>
+    <p id="f2"></p>
+    <footer>
+        <p><strong>DO VISIT AGAIN!!</strong></p>
+    </footer>
+</body>
+</html>
